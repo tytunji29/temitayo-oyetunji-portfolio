@@ -49,7 +49,6 @@ const Hero: React.FC = () => {
                   Download Resume
                 </button>
               </a>
-
               <a href="https://github.com/tytunji29" className="p-3 bg-slate-700 hover:bg-slate-600 rounded-xl transition-colors">
                 <Github size={20} />
               </a>
