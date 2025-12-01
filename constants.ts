@@ -5,7 +5,7 @@ export const RESUME_DATA: ResumeData = {
     name: "Oyetunji, Temitayo Elijah",
     email: "tytunji29@gmail.com",
     phone: "+234 810 576 4655",
-    address: "1 Church Street, Ojodu, Berger, Lagos, Nigeria",
+    address: "Lagos, Nigeria",
     summary: "Innovative and results-driven Software Developer with expertise in .NET,Java, Node.js, React Native, and microservices architecture. Passionate about delivering scalable solutions and driving organizational growth. Adept at collaborating across teams, modernizing legacy systems, and deploying enterprise-grade applications."
   },
   experience: [
