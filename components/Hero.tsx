@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           <div className="hidden md:block relative">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-slate-700/50 shadow-2xl relative rotate-3 hover:rotate-0 transition-transform duration-500">
               <img
-                src="components/image/51282145-3615-42A2-9560-741F1978422B_1_105_c.jpeg"
+                src="https://res.cloudinary.com/doghtjqip/image/upload/v1764589584/51282145-3615-42A2-9560-741F1978422B_1_105_c_xdbrna.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
