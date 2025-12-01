@@ -1,7 +1,7 @@
 export interface Experience {
   company: string;
   role: string;
-  period: string;
+  //period: string;
   description: string[];
   type: 'Full-time' | 'Contract' | 'Remote' | 'Hybrid';
 }

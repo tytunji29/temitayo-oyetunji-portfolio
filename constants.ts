@@ -12,7 +12,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Baobab Bank Nigeria",
       role: "Deputy Manager (Core Banking Implementation, Senegal)",
-      period: "June 2025 – Present",
+      //period: "June 2025 – Present",
       type: "Full-time",
       description: [
         "Leading core banking implementation across multiple branches.",
@@ -24,7 +24,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Access Bank Plc",
       role: "Backend Developer",
-      period: "Feb 2023 – June 2025",
+      //period: "Feb 2023 – June 2025",
       type: "Full-time",
       description: [
         "Developed enterprise microservices in C#/.NET Core across multiple subsidiaries like (Tanzania, Gambia, Angola).",
@@ -36,7 +36,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Contec Global (NowNow Technology)",
       role: "Team Lead, .NET Government Project (EDO STATE)",
-      period: "Feb 2022 – Jan 2024",
+      //period: "Feb 2022 – Jan 2024",
       type: "Contract",
       description: [
         "Led development of Edo State Internal Revenue Service Tax Generation Workflow.",
@@ -48,7 +48,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "CreditWave (Remote)",
       role: "Backend Developer",
-      period: "2023 – 2024",
+      //period: "2023 – 2024",
       type: "Remote",
       description: [
         "Built real-time applications and microservices with .NET Core, Node.js (NestJS & Express).",
@@ -59,7 +59,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Venture Genius, Dubai (Remote)",
       role: "Backend & Frontend Developer",
-      period: "Jan 2023 – Dec 2023",
+      // period: "Jan 2023 – Dec 2023",
       type: "Remote",
       description: [
         "Developed APIs and workflows for a Student Holiday Camp App (.NET Core + MS SQL).",
@@ -69,7 +69,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "First City Monument Bank (Outsourced by SBSC)",
       role: "Operational Application Developer",
-      period: "Feb 2023 – July 2023",
+      //period: "Feb 2023 – July 2023",
       type: "Contract",
       description: [
         "Managed onboarding/account modification APIs consumed by mobile & web platforms."
@@ -78,7 +78,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "Pajuno Development Co. Ltd",
       role: "Senior Software Developer",
-      period: "Mar 2021 – Feb 2022",
+      //period: "Mar 2021 – Feb 2022",
       type: "Full-time",
       description: [
         "Broke down monolithic apps into microservices.",
@@ -88,7 +88,7 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "The Nigerian Stock Exchange",
       role: "Consultant (RegTech)",
-      period: "2018 – 2020",
+      // period: "2018 – 2020",
       type: "Contract",
       description: [
         "Designed regulatory workflow solutions.",
@@ -147,6 +147,8 @@ export const RESUME_DATA: ResumeData = {
         { name: "MS SQL Server", level: 90 },
         { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 80 },
+        { name: "OracleDb", level: 80 },
+        { name: "NON-SQL", level: 80 },
         { name: "MySQL", level: 80 }
       ]
     },
