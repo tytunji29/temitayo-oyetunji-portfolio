@@ -1,9 +1,10 @@
 import { Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { RESUME_DATA } from '../constants';
 
 const Hero: React.FC = () => {
   const { personalInfo } = RESUME_DATA;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="relative bg-gradient-to-r from-slate-900 to-slate-800 text-white pt-24 pb-16 overflow-hidden">
@@ -41,14 +42,18 @@ const Hero: React.FC = () => {
                 <span>{personalInfo.address}</span>
               </div>
             </div>
-
             <div className="flex gap-4 pt-4">
-              <a href="components/image/TytunjiCv.pdf" download="Oyetunji_Temitayo_CV.pdf">
-                <button className="flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-brand-900/20">
-                  <Download size={18} />
-                  Download Resume
-                </button>
-              </a>
+
+              {/* Preview (opens modal) */}
+              <button
+                onClick={() => setIsOpen(true)}
+                className="flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-brand-900/20"
+              >
+                <Download size={18} />
+                Preview Resume
+              </button>
+
+              {/* Socials */}
               <a href="https://github.com/tytunji29" className="p-3 bg-slate-700 hover:bg-slate-600 rounded-xl transition-colors">
                 <Github size={20} />
               </a>
@@ -72,9 +77,45 @@ const Hero: React.FC = () => {
               <div className="text-sm text-slate-400">Years of Experience</div>
             </div>
           </div>
+          {isOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center"
+              aria-modal="true"
+              role="dialog"
+            >
+              {/* backdrop */}
+              <div
+                className="fixed inset-0 bg-black/60 backdrop-blur-sm"
+                onClick={() => setIsOpen(false)}
+              />
+
+              {/* modal panel */}
+              <div className="relative max-w-5xl w-full h-[90vh] mx-4 md:mx-0 bg-transparent rounded-lg shadow-2xl z-10">
+                <div className="absolute top-4 right-4 z-20">
+                  <button
+                    onClick={() => setIsOpen(false)}
+                    className="text-white bg-slate-800/60 hover:bg-slate-800/80 px-3 py-2 rounded-lg"
+                    aria-label="Close preview"
+                  >
+                    ×
+                  </button>
+                </div>
+
+                <div className="w-full h-full rounded-lg overflow-hidden border border-slate-700/60 bg-white/5">
+                  <iframe
+                    src="components/image/TytunjiCv.pdf"
+                    title="Resume Preview"
+                    className="w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
+
+
   );
 };
 
