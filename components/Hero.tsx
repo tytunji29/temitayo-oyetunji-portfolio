@@ -1,6 +1,8 @@
 import { Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import React, { useState } from 'react';
 import { RESUME_DATA } from '../constants';
+import TytunjiCv from "./image/TytunjiCv.pdf";
+
 
 const Hero: React.FC = () => {
   const { personalInfo } = RESUME_DATA;
@@ -103,7 +105,7 @@ const Hero: React.FC = () => {
 
                 <div className="w-full h-full rounded-lg overflow-hidden border border-slate-700/60 bg-white/5">
                   <iframe
-                    src="components/image/TytunjiCv.pdf"
+                    src={TytunjiCv}
                     title="Resume Preview"
                     className="w-full h-full"
                   />
